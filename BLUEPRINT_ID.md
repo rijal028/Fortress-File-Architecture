@@ -16,8 +16,9 @@
     * [4.1. Ruang Aman (Zona Sanitasi)](#41-ruang-aman-zona-sanitasi)
     * [4.2. Ruang Korporat (Zona Terpantau)](#42-ruang-korporat-zona-terpantau)
     * [4.3. Laboratorium Riset (Zona Terisolasi)](#43-laboratorium-riset-zona-terisolasi)
-5.  [Keunggulan Arsitektur](#5-keunggulan-arsitektur)
-6.  [Kesimpulan](#6-kesimpulan)
+5.  [Arsitektur Komunikasi Internal: Protokol Keamanan Terpadu (PKAI)](#5-arsitektur-komunikasi-internal-protokol-keamanan-terpadu-pkai)
+6.  [Keunggulan Arsitektur](#6-keunggulan-arsitektur)
+7.  [Kesimpulan](#7-kesimpulan)
 
 ---
 
@@ -81,13 +82,16 @@ Selain alur kerja file, pengguna juga beroperasi di dalam lingkungan terisolasi 
 * **Untuk Siapa:** Developer, tim IT, peneliti keamanan.
 * **Aturan:** Lingkungan ini memiliki tingkat kebebasan tertinggi untuk bekerja dengan kode dan skrip. Namun, ia diamankan dengan **isolasi total**. "Laboratorium" ini berjalan di lingkungan virtual yang terputus dari jaringan utama perusahaan. Apa pun yang terjadi di dalam lab, tetap di dalam lab. Lingkungan ini dapat dihapus dan diciptakan ulang kapan saja untuk memastikan kebersihannya.
 
-### 5. Keunggulan Arsitektur
+### 5. Arsitektur Komunikasi Internal: Protokol Keamanan Terpadu (PKAI)
+Untuk memastikan integritas semua komunikasi antar-layanan di dalam Arsitektur Benteng (misalnya, antara layanan penerima file dan layanan sanitasi CDR), sistem ini diamankan oleh sebuah protokol fondasi yang disebut **[Protokol Komunikasi Aman Internal (PKAI)](https://github.com/rijal028/Cognitive-Sentinel-Protocol/blob/main/PKAI_BLUEPRINT.md)**. Silakan lihat blueprint lengkapnya untuk detail teknisnya.
+
+### 6. Keunggulan Arsitektur
 
 * **Imunitas Terhadap Ancaman Zero-Day:** Dengan menghancurkan dan membangun ulang file (CDR), ancaman yang belum dikenal sekalipun dapat dinetralisir.
 * **Pertahanan Berlapis yang Cerdas:** Sistem tidak hanya memiliki banyak lapisan, tetapi setiap lapisan saling menginformasikan (konteks peran menentukan alur kerja keamanan).
 * **Mengurangi Beban & Kelelahan Analis:** Sebagian besar ancaman sudah ditangani secara otomatis, memungkinkan tim keamanan untuk fokus pada anomali yang benar-benar penting di "Jalur Merah".
 * **Memungkinkan Produktivitas:** Dengan adanya zona yang berbeda, pengguna yang membutuhkan fungsionalitas berisiko tetap bisa bekerja, namun dalam lingkungan yang terkendali, tanpa mengorbankan keamanan mayoritas pengguna lain.
 
-### 6. Kesimpulan
+### 7. Kesimpulan
 
 Arsitektur Benteng adalah sebuah pergeseran paradigma dari model keamanan reaktif ke model imunitas proaktif. Dengan memperlakukan setiap file sebagai tidak tepercaya secara default dan menerapkan kebijakan keamanan yang ketat berdasarkan konteks, arsitektur ini bertujuan untuk membuat kelas serangan berbasis file menjadi usang, bukan hanya mendeteksinya. Ini adalah cetak biru untuk masa depan penanganan file yang benar-benar aman.
