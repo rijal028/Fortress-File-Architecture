@@ -16,8 +16,9 @@
     * ['4.1. The Safe Room (Sanitization Zone)'](#41-the-safe-room-sanitization-zone)
     * ['4.2. The Corporate Room (Monitored Zone)'](#42-the-corporate-room-monitored-zone)
     * ['4.3. The Research Lab (Isolated Zone)'](#43-the-research-lab-isolated-zone)
-5.  ['Advantages of the Architecture'](#5-advantages-of-the-architecture)
-6.  ['Conclusion'](#6-conclusion)
+5.  [Internal Communication Architecture: The Integrated Security Protocol (PKAI)](#5-internal-communication-architecture-the-integrated-security-protocol-pkai)
+6.  [Advantages of the Architecture](#6-advantages-of-the-architecture)
+7.  [Conclusion](#7-conclusion)
 
 ---
 
@@ -81,13 +82,16 @@ In addition to the file workflow, users also operate within isolated environment
 * **For Whom:** Developers, IT team, security researchers.
 * **Rules:** This environment has the highest level of freedom for working with code and scripts. However, it is secured with **total isolation**. This "lab" runs in virtual environments that are completely disconnected from the main corporate network. Whatever happens in the lab, stays in the lab. These environments can be deleted and recreated at any time to ensure cleanliness.
 
-### 5. Advantages of the Architecture
+### 5. Internal Communication Architecture: The Integrated Security Protocol (PKAI)
+To ensure the integrity of all internal communications between services within the Fortress Architecture (e.g., between the file ingestion service and the CDR sanitation service), the system is secured by a foundational protocol called the **[Internal Secure Communication Protocol (PKAI)](https://github.com/rijal028/Cognitive-Sentinel-Protocol/blob/main/PKAI_BLUEPRINT.md)**. Please see its full blueprint for technical details.
+
+### 6. Advantages of the Architecture
 
 * **Immunity to Zero-Day Threats:** By destroying and rebuilding files (CDR), even unknown threats can be neutralized.
 * **Intelligent Layered Defense:** The system not only has many layers, but each layer informs the others (the context of the role determines the security workflow).
 * **Reduced Analyst Burden & Fatigue:** The majority of threats are handled automatically, allowing the security team to focus on truly important anomalies in the "Red Lane."
 * **Enables Productivity:** By having different zones, users who need risky functionality can still work, but within a controlled environment, without compromising the security of the majority of other users.
 
-### 6. Conclusion
+### 7. Conclusion
 
 The Fortress Architecture is a paradigm shift from reactive security models to proactive immunity. By treating every file as untrusted by default and applying strict security policies based on context, this architecture aims to make entire classes of file-based attacks obsolete, not just detect them. It is a blueprint for a truly secure future of file handling.
