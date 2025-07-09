@@ -25,6 +25,17 @@ For a complete technical and philosophical breakdown of the architecture, please
 * **[Baca Blueprint Lengkap (Bahasa Indonesia)](BLUEPRINT_ID.md)**
 
 ---
+
+## 📁 Additional Modules
+
+This repository contains specialized modules of the Fortress Architecture.
+
+- [🛡️ Safe Zone CDR Documentation – v1.1.9 (Bilingual)](README-SAFE-ZONE.md)  
+  *Contains full explanation of the standalone content disarm and reconstruction system (CDR), for general users and schools.*
+
+---
+
+---
 ---
 
 ### **Visi (Bahasa Indonesia)**
@@ -47,3 +58,16 @@ Untuk penjelasan teknis dan filosofis yang lengkap dari arsitektur ini, silakan 
 
 * **[Baca Blueprint Lengkap (Bahasa Indonesia)](BLUEPRINT_ID.md)**
 * **[Read the Full Blueprint (English)](BLUEPRINT_EN.md)**
+
+---
+
+## 📁 Modul Tambahan
+
+Repositori ini berisi modul-modul khusus dari Arsitektur Benteng.
+
+- [🛡️ Safe Zone CDR Documentation – v1.1.9 (Bilingual)](README-SAFE-ZONE.md)  
+  *Berisi penjelasan lengkap sistem pemisahan dan rekonstruksi konten (CDR) mandiri, untuk pengguna umum dan sekolah.*
+
+---
+
+
