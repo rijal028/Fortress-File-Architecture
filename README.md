@@ -1,6 +1,24 @@
 # The Fortress Architecture
 *A conceptual framework by Rijal Saepuloh for proactive, context-based file security.*
 
+<p align="center">
+
+  <!-- Project Status -->
+  <img src="https://img.shields.io/badge/status-stable-brightgreen.svg" alt="Status">
+
+  <!-- License -->
+  <img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License">
+
+  <!-- Python Version -->
+  <img src="https://img.shields.io/badge/python-3.11+-blue.svg" alt="Python">
+
+  <!-- CDR Version -->
+  <img src="https://img.shields.io/badge/CDR-Zone%201%20v1.1.9-important.svg" alt="CDR Zone">
+
+</p>
+
+
+
 ---
 
 ### **Vision (English)**
